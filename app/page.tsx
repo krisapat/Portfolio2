@@ -236,7 +236,7 @@ export default function Home() {
         </div>
       </section>
       <section id="Location">
-        <div className="h-screen w-full flex flex-col p-10 relative overflow-hidden">
+        <div className="min-h-screen w-full flex flex-col p-10 relative overflow-hidden">
           <Image
             src="/img/Burger1.png"
             alt="Burger Background"
@@ -248,7 +248,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold z-10 text-white">BurgerHeaven</h1>
           </div>
           <div className="w-full h-full mt-10">
-            <div className="flex flex-col z-10 space-x-5 lg:flex-row w-full h-full p-4 z-10">
+            <div className="flex flex-col z-10 md:space-x-5 lg:flex-row w-full h-full p-4">
               <div className="w-full space-y-4 z-10 lg:w-1/2 mb-10 lg:mb-0">
                 <div className="w-full bg-black/50 p-4 border border-white/50 rounded-xl">
                   <h2 className="text-3xl font-bold mb-4">Our Location</h2>
@@ -280,12 +280,12 @@ export default function Home() {
         </div>
       </section>
       <section id="Contact">
-        <div className="h-screen w-full flex flex-col p-10 relative overflow-hidden">
+        <div className="min-h-screen w-full flex flex-col p-10 relative overflow-hidden">
           <div className="flex justify-start">
             <h1 className="text-4xl font-bold z-10 text-white">Contact</h1>
           </div>
           <div className="w-full h-full mt-10">
-            <div className="flex flex-col space-x-5 lg:flex-row w-full h-full p-4 z-10">
+            <div className="flex flex-col lg:space-x-4 lg:flex-row w-full h-full p-4 z-10">
 
               <div className="lg:w-1/2">
                 <Image
@@ -296,7 +296,7 @@ export default function Home() {
                   className="z-20 w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
-              <div className="w-full lg:w-1/2 mb-10 lg:mb-0 space-y-4">
+              <div className="w-full w-1/2 mt-10 lg:mt-0 space-y-4">
                 <div className="w-full bg-black/50 p-4 border border-white/50 rounded-xl">
                   <h2 className="text-3xl font-bold mb-4">Social</h2>
                   <div className="flex space-x-3 items-center">
