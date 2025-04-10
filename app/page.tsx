@@ -61,46 +61,54 @@ export default function Home() {
           <FadeUpWhenVisible>
             <h1 className="text-5xl font-bold text-center md:text-left mb-10">Our Menu</h1>
           </FadeUpWhenVisible>
-          <div className="w-full px-15 space-y-10">
+          <div className="w-full space-y-10">
             <FadeUpWhenVisible>
-              <div className="backdrop-blur-md bg-black/50 max-w-6xl shadow-xl rounded-2xl mx-auto flex flex-col p-6 sm:p-10">
-                <h2 className="text-white text-4xl font-extrabold mb-6 text-center drop-shadow-lg">
+              <div className="backdrop-blur-md bg-black/50 w-full shadow-xl rounded-2xl mx-auto flex flex-col p-4 md:p-10">
+                <h2 className="text-white text-3xl sm:text-4xl font-extrabold mb-6 text-center drop-shadow-lg">
                   Classic Cheeseburger
                 </h2>
-                <div className="flex flex-col lg:flex-row gap-8">
-                  <div className="lg:w-1/2 w-full">
+
+                <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                  {/* Image Section */}
+                  <div className="w-full lg:w-1/2">
                     <div className="rounded-xl overflow-hidden shadow-md">
                       <Image
                         src="/img/cheeseburger.png"
                         alt="Classic Cheeseburger"
                         width={800}
                         height={600}
-                        className="object-cover w-full h-auto"
+                        className="object-cover w-full h-full max-h-[400px] sm:max-h-[500px]"
                         priority
                       />
                     </div>
                   </div>
-                  <div className="lg:w-1/2 w-full flex flex-col text-white text-base sm:text-lg leading-relaxed space-y-4">
-                    <div className="flex gap-6 text-3xl">
+
+                  {/* Info Section */}
+                  <div className="w-full lg:w-1/2 flex flex-col text-white text-sm sm:text-base md:text-lg leading-relaxed space-y-4">
+                    {/* Icons */}
+                    <div className="flex gap-4 sm:gap-6 text-2xl sm:text-3xl">
                       <GiPig title="Pork" />
                       <GiChicken title="Chicken" />
                       <GiCow title="Beef" />
                     </div>
-                    <div className="text-xl font-bold">
+
+                    {/* Price Info */}
+                    <div className="text-base sm:text-lg md:text-xl font-bold space-y-1">
                       <p>Hamburger + French fries + water : 199 THB</p>
                       <p>Hamburger : 100 THB</p>
                       <p>Beef +20 THB</p>
                     </div>
+
+                    {/* Order Button */}
                     <a
                       href="https://lineman.line.me/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-center px-6 py-3 bg-white/20 text-white rounded-xl text-lg transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 mt-auto"
+                      className="text-center px-6 py-3 bg-white/20 text-white rounded-xl text-base sm:text-lg transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 mt-4 lg:mt-auto"
                     >
                       Order now!
                     </a>
                   </div>
-
                 </div>
               </div>
             </FadeUpWhenVisible>
